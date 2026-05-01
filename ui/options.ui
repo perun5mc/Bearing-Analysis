@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #140546;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,2">
+          <item>
+           <widget class="QLabel" name="lbl_speed">
+            <property name="font">
+             <font>
+              <family>Nirmala UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: white;</string>
+            </property>
+            <property name="text">
+             <string>Speed (Hz): </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="inp_speed">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500000</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Nirmala UI</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSpinBox {
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #240388;
+}
+</string>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::NoButtons</enum>
+            </property>
+            <property name="minimum">
+             <number>0</number>
+            </property>
+            <property name="maximum">
+             <number>999999</number>
+            </property>
+            <property name="value">
+             <number>60</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,2">
+        <item>
+         <widget class="QLabel" name="lbl_harmonics">
+          <property name="font">
+           <font>
+            <family>Nirmala UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: white;</string>
+          </property>
+          <property name="text">
+           <string>Harmonics: </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="inp_harmonics">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50000</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Nirmala UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QSpinBox {
+	color: white;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #240388;
+}
+
+QSpinBox::up-arrow {
+	width: 10px;
+}
+
+QSpinBox::down-arrow {
+	width: 10px;
+}</string>
+          </property>
+          <property name="buttonSymbols">
+           <enum>QAbstractSpinBox::NoButtons</enum>
+          </property>
+          <property name="specialValueText">
+           <string/>
+          </property>
+          <property name="maximum">
+           <number>99999</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QComboBox" name="drop_modes">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50000</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Nirmala UI</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+            <kerning>true</kerning>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+	color: white;
+	padding-left: 10px;
+	border-radius: 10px;
+	background-color: #240388;
+}
+
+QComboBox QAbstractItemView {
+    selection-background-color: #240388;
+}
+
+QListView {
+	color: white;
+	border-radius: 0px;
+	padding: 5px;
+	font-size: 15px;
+}
+
+QComboBox::drop-down {
+	image: url(C:/Users/Intern 4.Intern4/Desktop/downarrow.png);
+	width: 22px;
+	padding-right: 5px;
+	height: 28px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}</string>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QComboBox::AdjustToContents</enum>
+          </property>
+          <item>
+           <property name="text">
+            <string>Choose modes: </string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Roller</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Inner Race</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Outer Race</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cage</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Shaft</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="drop_bearings">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50000</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Nirmala UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+	color: white;
+	padding-left: 10px;
+	border-radius: 10px;
+	background-color: #240388;
+}
+
+QComboBox QAbstractItemView {
+    selection-background-color: #240388;
+}
+
+QListView {
+	color: white;
+	border-radius: 0px;
+	padding: 5px;
+	font-size: 15px;
+}
+
+QComboBox::drop-down {
+	image: url(C:/Users/Intern 4.Intern4/Desktop/downarrow.png);
+	width: 22px;
+	padding-right: 5px;
+	height: 28px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}</string>
+          </property>
+          <property name="editable">
+           <bool>false</bool>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>Choose bearings</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Quantis148_B1_geom</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox">
+          <property name="font">
+           <font>
+            <family>Nirmala UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">:enabled {
+	background: none;
+	border-radius: 10px;
+	color: white;
+	height: 25px;
+	padding-left: 10px;
+}
+
+:hover {
+	background: #453083;
+}</string>
+          </property>
+          <property name="text">
+           <string>  To Log</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <property name="tristate">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
